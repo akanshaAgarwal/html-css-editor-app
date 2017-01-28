@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#129fa8</color>
+    <color name="colorPrimaryDark">#086165</color>
+    <color name="colorAccent">#00a834</color>
+
+    <color name="indicator_1">#00bfa5</color>
+    <color name="indicator_2">#bbdefb</color>
+    <color name="indicator_3">#90caf9</color>
+    <color name="indicator_4">#4db6ac</color>
+    <color name="spring_indicator_color">#f5f5f5</color>
+    <color name="material_fab">#cfd8dc</color>
+</resources>
