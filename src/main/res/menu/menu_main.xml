@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="trainedge.htmleditor.MainActivity">
+    <item
+        android:id="@+id/action_invite"
+        android:orderInCategory="100"
+        android:title="Invite"
+        app:showAsAction="never" />
+    <item
+        android:title="Rating"
+        android:orderInCategory="101"
+        android:id="@+id/action_rating" />
+    <item
+        android:title="Feedback"
+        android:orderInCategory="102"
+        android:id="@+id/action_feedback" />
+    <item
+        android:title="Sign Out"
+        android:orderInCategory="103"
+        android:id="@+id/action_signout" />
+</menu>

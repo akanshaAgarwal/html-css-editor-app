@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Open"
+        android:id="@+id/miOpen" />
+    <item android:title="Clear"
+        android:id="@+id/miClear" />
+    <item android:title="Delete"
+        android:id="@+id/miDelete" />
+</menu>
