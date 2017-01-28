@@ -1,0 +1,120 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clBottomSheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="trainedge.htmleditor.EditorFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:id="@+id/rlMainContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@+id/rlBottomSheet"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimary"
+            android:id="@+id/lltools">
+
+            <ImageButton
+                android:layout_weight="1"
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:src="@drawable/ic_save_black_24dp" />
+
+            <ImageButton
+                android:layout_weight="1"
+                android:id="@+id/btnPreview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:src="@drawable/ic_correct_preview_black_24dp" />
+
+            <ImageButton
+                android:layout_weight="1"
+                android:id="@+id/btnUndo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:src="@drawable/ic_undo_black_24dp" />
+
+            <ImageButton
+                android:layout_weight="1"
+                android:id="@+id/btnRedo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:src="@drawable/ic_redo_black_24dp" />
+
+            <ImageButton
+                android:layout_weight="1"
+                android:id="@+id/btnKeyboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:src="@drawable/ic_keyboard_black_24dp" />
+
+        </LinearLayout>
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/autoCompleteTextView"
+            android:layout_weight="1"
+            android:ems="10"
+            android:layout_below="@+id/lltools"
+            android:completionThreshold="1"
+            android:background="#424242"
+            android:textColor="#fff"
+            android:padding="2dp"
+            android:textSize="16sp"
+            android:dropDownHeight="100dp"
+            android:dropDownWidth="wrap_content"
+            android:gravity="top|start|center_vertical" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlBottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="#e0e0e0"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvTabs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#e0f2f1" />
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

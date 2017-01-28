@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_margin="4dp"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:text="Button"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:id="@+id/btnTabs"
+        android:elevation="4dp"
+        style="@style/Widget.AppCompat.Button"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:background="@drawable/btn_rounded_light"
+        android:layout_height="32dp" />
+
+</LinearLayout>
